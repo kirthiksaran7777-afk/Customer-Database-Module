@@ -2,7 +2,7 @@
 
 ## Week 1 – Customer Database Module
 
-### 📌 Project Overview
+###  Project Overview
 
 **QuickCart** is a simple e-commerce database project inspired by online shopping platforms such as BigBasket and Meesho.
 
@@ -12,7 +12,7 @@ For **Week 1**, the project focuses on the **Customer Database Module**.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 The main objectives of this project are:
 
@@ -26,7 +26,7 @@ The main objectives of this project are:
 
 ---
 
-## 🗂️ Main Entities
+##  Main Entities
 
 The complete QuickCart system consists of the following major entities:
 
@@ -41,7 +41,7 @@ The Week 1 implementation focuses only on the **Customer** entity.
 
 ---
 
-## 👤 Customer Module
+##  Customer Module
 
 The Customer table stores:
 
@@ -66,7 +66,7 @@ The table uses constraints such as:
 
 ---
 
-## 💻 Technologies Used
+##  Technologies Used
 
 * **Database:** MySQL
 * **Language:** SQL
@@ -74,7 +74,7 @@ The table uses constraints such as:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 QuickCart/
@@ -90,7 +90,7 @@ QuickCart/
 
 ---
 
-## 🛠️ How to Run the Project
+##  How to Run the Project
 
 ### Step 1: Open MySQL
 
@@ -130,7 +130,7 @@ These operations demonstrate the basic database functionality required for Week 
 
 ---
 
-## 📊 Sample Customer Data
+## Sample Customer Data
 
 | Customer ID | Name         | Email                                         | City        |
 | ----------: | ------------ | --------------------------------------------- | ----------- |
@@ -142,7 +142,7 @@ These operations demonstrate the basic database functionality required for Week 
 
 ---
 
-## 🔄 CRUD Operations
+##  CRUD Operations
 
 | Operation | SQL Command | Purpose                    |
 | --------- | ----------- | -------------------------- |
@@ -154,7 +154,7 @@ These operations demonstrate the basic database functionality required for Week 
 
 ---
 
-## 🚀 Future Development
+##  Future Development
 
 The following modules can be added in future weeks:
 
@@ -168,7 +168,7 @@ The following modules can be added in future weeks:
 
 ---
 
-## 📌 Week 1 Scope
+##  Week 1 Scope
 
 The Week 1 assignment covers:
 
@@ -181,7 +181,7 @@ The Week 1 assignment covers:
 
 ---
 
-## 👨‍💻 Project
+##  Project
 
 **Project Name:** QuickCart
 **Project Type:** E-Commerce Database Management System
@@ -192,19 +192,19 @@ The Week 1 assignment covers:
 
 # Product Category Management System
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Product Category Management System** is a MySQL database project designed to manage products and organize them into different categories.
 
 The database stores product details such as product name and price, while maintaining a relationship between products and their respective categories.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * **MySQL**
 * **SQL**
 * **Relational Database Management System (RDBMS)**
 
-## 📂 Database Structure
+##  Database Structure
 
 The project contains two tables:
 
@@ -228,7 +228,7 @@ Stores information about individual products.
 | price        | DECIMAL(10,2) | Price of the product             |
 | category_id  | INT           | Foreign key referencing category |
 
-## 📋 Categories Used
+##  Categories Used
 
 The database contains the following categories:
 
@@ -237,7 +237,7 @@ The database contains the following categories:
 * Stationery
 * Kitchen Items
 
-## 🔑 SQL Concepts Demonstrated
+##  SQL Concepts Demonstrated
 
 This project demonstrates the following SQL concepts:
 
@@ -259,7 +259,7 @@ This project demonstrates the following SQL concepts:
 * Updating records using `UPDATE`
 * Deleting records using `DELETE`
 
-## 🔍 Queries Included
+##  Queries Included
 
 ### Display all categories
 
