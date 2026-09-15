@@ -323,3 +323,86 @@ HAVING COUNT(p.product_id)>5;
 SELECT c.category_name,AV_
 ```
 
+# E-Commerce Inventory Analysis
+
+##  Project Overview
+
+This project is a simple **E-Commerce Inventory Management and Analysis System** developed using **MySQL**.
+
+The project manages seller details and inventory information. It also performs basic CRUD operations and analyzes inventory data using SQL queries.
+
+---
+
+##  Objectives
+
+- Store seller information.
+- Store product inventory details.
+- Connect sellers with their inventory using a foreign key.
+- Perform CRUD operations.
+- Find the total number of products.
+- Identify products that are out of stock.
+- Find the highest-stocked product.
+- Calculate the average inventory quantity.
+- Calculate the total inventory quantity.
+- Display seller and product information using JOIN.
+
+---
+
+##  Technologies Used
+
+- **Database:** MySQL
+- **Language:** SQL
+- **Concepts:** 
+  - CREATE DATABASE
+  - CREATE TABLE
+  - PRIMARY KEY
+  - FOREIGN KEY
+  - INSERT
+  - SELECT
+  - UPDATE
+  - DELETE
+  - JOIN
+  - COUNT()
+  - MAX()
+  - AVG()
+  - SUM()
+  - Subquery
+
+---
+
+##  Database Structure
+
+### 1. Seller Table
+
+The `Seller` table stores information about sellers.
+
+| Column | Data Type | Description |
+|---|---|---|
+| seller_id | INT | Primary key |
+| seller_name | VARCHAR(100) | Name of seller |
+| phone | VARCHAR(15) | Seller phone number |
+
+### 2. Inventory Table
+
+The `Inventory` table stores product and stock information.
+
+| Column | Data Type | Description |
+|---|---|---|
+| inventory_id | INT | Primary key |
+| seller_id | INT | Foreign key referencing Seller |
+| product_name | VARCHAR(100) | Name of product |
+| quantity | INT | Available stock quantity |
+
+---
+
+##  Relationship
+
+The relationship between the tables is:
+
+```text
+Seller
+   |
+   | 1
+   |
+   | N
+Inventory
