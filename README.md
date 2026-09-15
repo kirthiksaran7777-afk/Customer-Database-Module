@@ -188,3 +188,138 @@ The Week 1 assignment covers:
 **Database:** MySQL
 **Module:** Customer Database Module
 **Version:** Week 1
+
+
+# Product Category Management System
+
+## 📌 Project Overview
+
+The **Product Category Management System** is a MySQL database project designed to manage products and organize them into different categories.
+
+The database stores product details such as product name and price, while maintaining a relationship between products and their respective categories.
+
+## 🛠️ Technologies Used
+
+* **MySQL**
+* **SQL**
+* **Relational Database Management System (RDBMS)**
+
+## 📂 Database Structure
+
+The project contains two tables:
+
+### 1. Category Table
+
+Stores the different product categories.
+
+| Column        | Data Type   | Description          |
+| ------------- | ----------- | -------------------- |
+| category_id   | INT         | Primary key          |
+| category_name | VARCHAR(50) | Name of the category |
+
+### 2. Product Table
+
+Stores information about individual products.
+
+| Column       | Data Type     | Description                      |
+| ------------ | ------------- | -------------------------------- |
+| product_id   | INT           | Primary key                      |
+| product_name | VARCHAR(100)  | Name of the product              |
+| price        | DECIMAL(10,2) | Price of the product             |
+| category_id  | INT           | Foreign key referencing category |
+
+## 📋 Categories Used
+
+The database contains the following categories:
+
+* Furniture
+* Food
+* Stationery
+* Kitchen Items
+
+## 🔑 SQL Concepts Demonstrated
+
+This project demonstrates the following SQL concepts:
+
+* Database creation
+* Table creation
+* Primary Key
+* Foreign Key
+* `AUTO_INCREMENT`
+* `NOT NULL`
+* Data insertion using `INSERT`
+* Data retrieval using `SELECT`
+* `JOIN`
+* `LEFT JOIN`
+* Aggregate functions such as `COUNT()` and `AVG()`
+* `GROUP BY`
+* `HAVING`
+* Subqueries
+* Finding the maximum-priced product in each category
+* Updating records using `UPDATE`
+* Deleting records using `DELETE`
+
+## 🔍 Queries Included
+
+### Display all categories
+
+```sql
+SELECT * FROM category;
+```
+
+### Display all products
+
+```sql
+SELECT * FROM product;
+```
+
+### Display products with their categories
+
+```sql
+SELECT p.product_id,p.product_name,p.price,c.category_name
+FROM product p
+JOIN category c
+ON p.category_id=c.category_id;
+```
+
+### Count products in each category
+
+```sql
+SELECT c.category_name,COUNT(p.product_id) AS product_count
+FROM category c
+LEFT JOIN product p
+ON c.category_id=p.category_id
+GROUP BY c.category_id,c.category_name;
+```
+
+### Find the highest-priced product in each category
+
+```sql
+SELECT c.category_name,p.product_name,p.price
+FROM category c
+JOIN product p
+ON c.category_id=p.category_id
+WHERE p.price=(
+    SELECT MAX(p2.price)
+    FROM product p2
+    WHERE p2.category_id=p.category_id
+);
+```
+
+### Find categories having more than 5 products
+
+```sql
+SELECT c.category_name,COUNT(p.product_id) AS product_count
+FROM category c
+JOIN product p
+ON c.category_id=p.category_id
+GROUP BY c.category_id,c.category_name
+HAVING COUNT(p.product_id)>5;
+```
+
+### Calculate average price by category
+
+```sql
+SELECT c.category_name,AV_
+```
+
