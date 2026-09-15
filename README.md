@@ -41,7 +41,7 @@ The Week 1 implementation focuses only on the **Customer** entity.
 
 ---
 
-##  Customer Module
+## ## Week 2 - Customer Module
 
 The Customer table stores:
 
@@ -168,9 +168,9 @@ The following modules can be added in future weeks:
 
 ---
 
-##  Week 1 Scope
+##  Week 2 Scope
 
-The Week 1 assignment covers:
+The Week 2 assignment covers:
 
 * Requirement Analysis
 * Customer Table Design
@@ -187,7 +187,7 @@ The Week 1 assignment covers:
 **Project Type:** E-Commerce Database Management System
 **Database:** MySQL
 **Module:** Customer Database Module
-**Version:** Week 1
+**Version:** Week 2
 
 
 # Product Category Management System
@@ -323,7 +323,7 @@ HAVING COUNT(p.product_id)>5;
 SELECT c.category_name,AV_
 ```
 
-# E-Commerce Inventory Analysis
+# ## Week 3 - E-Commerce Inventory Analysis
 
 ##  Project Overview
 
